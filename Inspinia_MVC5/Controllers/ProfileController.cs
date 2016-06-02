@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Inspinia_MVC5.Controllers
 {
-    public class PersonController : Controller
+    public class ProfileController : Controller
     {
         // GET: Person
         public ActionResult Index()

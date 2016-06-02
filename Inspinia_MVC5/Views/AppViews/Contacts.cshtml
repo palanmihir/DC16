@@ -20,100 +20,275 @@
     </div>
 </div>
 <div class="wrapper wrapper-content animated fadeInRight">
+    @*<div class="row">
+        <div class="col-lg-4">
+            <div class="widget style1 blue-bg">
+                <div class="row vertical-align">
+                    <div class="col-xs-3">
+                        <h4 class="m-b-n text-left"><strong>Awaiting attention</strong></h4>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <h2 class="font-bold">15</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="widget style1 red-bg">
+                <div class="row vertical-align">
+                    <div class="col-xs-3">
+                        <h4 class="m-b-n text-left"><strong>High priority</strong></h4>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <h2 class="font-bold">2</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="widget style1 yellow-bg">
+                <div class="row vertical-align">
+                    <div class="col-xs-3">
+                        <h4 class="m-b-n text-left"><strong>Low priority</strong></h4>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <h2 class="font-bold">4</h2>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+    @*</div>*@
     <div class="row">
         <div class="col-lg-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <span class="label label-success pull-right">Check</span>
+                    <h5>Awaiting attention</h5>
+                </div>
+                <div class="ibox-content">
+                    <h1 class="no-margins">10</h1>
+                    <div class="stat-percent font-bold text-navy">10%<i class="fa fa-level-down"></i></div>
+                    <small>Residents</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <span class="label label-warning pull-right">Alerts</span>
+                    <h5>High priority</h5>
+                </div>
+                <div class="ibox-content">
+                    <h1 class="no-margins">7</h1>
+                    <div class="stat-percent font-bold text-danger">38% <i class="fa fa-level-up"></i></div>
+                    <small>Unassigned alerts</small>
+                </div>
+            </div>
+        </div>
+        @*<div class="col-lg-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-warning pull-right">Alerts</span>
+                        <h5>Low priority</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">13</h1>
+                        <div class="stat-percent font-bold text-warning">44% <i class="fa fa-level-up"></i></div>
+                        <small>Unassigned alerts</small>
+                    </div>
+                </div>
+            </div>*@
+        <div class="col-lg-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <span class="label label-danger pull-right">Risk</span>
+                    <h5>High risk residents</h5>
+                </div>
+                <div class="ibox-content">
+                    <h1 class="no-margins">2</h1>
+                    <div class="stat-percent font-bold text-danger">15% <i class="fa fa-level-up"></i></div>
+                    <small>Residents</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="widget contact-box white-bg">
+                <div class="row vertical-align">
+                    <h3 class="text-center"><strong>Assigned residents</strong></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
             <div class="contact-box">
                 <a href="@Url.Action("Profile", "AppViews")">
                     <div class="col-sm-4">
                         <div class="text-center">
+                            <h5><strong><span class="m-t-xs"><i class="fa fa-circle text-navy"></i></span> Jack Nicholson</strong></h5>
                             <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a2.jpg">
-                            <div class="m-t-xs font-bold">Graphics designer</div>
+                            <div class="text-center"><i class="fa fa-home"></i><small> Room 2</small></div>
                         </div>
                     </div>
-                    <div class="col-sm-8">
-                        <h3><strong>John Smith</strong></h3>
-                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
+                    <div class="col-sm-8 text-center">
+                        <i class="fa fa-warning fa-3x text-danger"></i>
+                        <div class="text-center no-margins"><h4>Events:</h4></div>
                     </div>
+                    <div class="text-center no-margins text-danger"><h2>10</h2></div>
+                    <div class="text-center"><strong>Last visit:</strong> Dr House, doctor<br /><small>24 minutes ago</small></div>
                     <div class="clearfix"></div>
                 </a>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="contact-box">
                 <a href="@Url.Action("Profile", "AppViews")">
                     <div class="col-sm-4">
                         <div class="text-center">
+                            <h5><strong><span class="m-t-xs"><i class="fa fa-circle text-danger"></i></span> Albert Einstein</strong></h5>
                             <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a1.jpg">
-                            <div class="m-t-xs font-bold">CEO</div>
+                            <div class="text-center"><i class="fa fa-home"></i><small> Room 1</small></div>
                         </div>
                     </div>
-                    <div class="col-sm-8">
-                        <h3><strong>Alex Johnatan</strong></h3>
-                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
+                    <div class="col-sm-8 text-center">
+                        <i class="fa fa-check fa-3x text-navy"></i>
+                        <div class="text-center no-margins"><h4>Events:</h4></div>
                     </div>
+                    <div class="text-center no-margins text-navy"><h2>0</h2></div>
+                    <div class="text-center"><strong>Last visit:</strong> Kate Mary, nurse<br /><small>1 hour ago</small></div>
                     <div class="clearfix"></div>
                 </a>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="contact-box">
                 <a href="@Url.Action("Profile", "AppViews")">
                     <div class="col-sm-4">
                         <div class="text-center">
+                            <h5><strong><span class="m-t-xs"><i class="fa fa-circle text-navy"></i></span> Gandalf The White</strong></h5>
                             <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a3.jpg">
-                            <div class="m-t-xs font-bold">Marketing manager</div>
+                            <div class="text-center"><i class="fa fa-home"></i><small> Room 3</small></div>
                         </div>
                     </div>
-                    <div class="col-sm-8">
-                        <h3><strong>Monica Smith</strong></h3>
-                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
+                    <div class="col-sm-8 text-center">
+                        <i class="fa fa-check fa-3x text-navy"></i>
+                        <div class="text-center no-margins"><h4>Events:</h4></div>
                     </div>
+                    <div class="text-center no-margins text-navy"><h2>0</h2></div>
+                    <div class="text-center"><strong>Last visit:</strong> Kate Mary, nurse<br /><small>1 hour ago</small></div>
                     <div class="clearfix"></div>
                 </a>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="contact-box">
                 <a href="@Url.Action("Profile", "AppViews")">
                     <div class="col-sm-4">
                         <div class="text-center">
+                            <h5><strong><span class="m-t-xs"><i class="fa fa-circle text-navy"></i></span> Helen Mirren</strong></h5>
                             <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a4.jpg">
-                            <div class="m-t-xs font-bold">Sales manager</div>
+                            <div class="text-center"><i class="fa fa-home"></i><small> Room 4</small></div>
                         </div>
                     </div>
-                    <div class="col-sm-8">
-                        <h3><strong>Michael Zimber</strong></h3>
-                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
+                    <div class="col-sm-8 text-center">
+                        <i class="fa fa-check fa-3x text-navy"></i>
+                        <div class="text-center no-margins"><h4>Events:</h4></div>
                     </div>
+                    <div class="text-center no-margins text-navy"><h2>0</h2></div>
+                    <div class="text-center"><strong>Last visit:</strong> Kate Mary, nurse<br /><small>1 hour ago</small></div>
                     <div class="clearfix"></div>
                 </a>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="contact-box">
+                    <a href="@Url.Action("Profile", "AppViews")">
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <h5><strong><span class="m-t-xs"><i class="fa fa-circle text-navy"></i></span> Gandalf The White</strong></h5>
+                                <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a3.jpg">
+                                <div class="text-center"><i class="fa fa-home"></i><small> Room 3</small></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 text-center">
+                            <i class="fa fa-check fa-3x text-navy"></i>
+                            <div class="text-center no-margins"><h4>Events:</h4></div>
+                        </div>
+                        <div class="text-center no-margins text-navy"><h2>0</h2></div>
+                        <div class="text-center"><strong>Last visit:</strong> Kate Mary, nurse<br /><small>1 hour ago</small></div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="contact-box">
+                    <a href="@Url.Action("Profile", "AppViews")">
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <h5><strong><span class="m-t-xs"><i class="fa fa-circle text-navy"></i></span> Helen Mirren</strong></h5>
+                                <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a4.jpg">
+                                <div class="text-center"><i class="fa fa-home"></i><small> Room 4</small></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 text-center">
+                            <i class="fa fa-check fa-3x text-navy"></i>
+                            <div class="text-center no-margins"><h4>Events:</h4></div>
+                        </div>
+                        <div class="text-center no-margins text-navy"><h2>0</h2></div>
+                        <div class="text-center"><strong>Last visit:</strong> Kate Mary, nurse<br /><small>1 hour ago</small></div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="contact-box">
+                    <a href="@Url.Action("Profile", "AppViews")">
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <h5><strong><span class="m-t-xs"><i class="fa fa-circle text-navy"></i></span> Jack Nicholson</strong></h5>
+                                <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a2.jpg">
+                                <div class="text-center"><i class="fa fa-home"></i><small> Room 2</small></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 text-center">
+                            <i class="fa fa-check fa-3x text-navy"></i>
+                            <div class="text-center no-margins"><h4>Events:</h4></div>
+                        </div>
+                        <div class="text-center no-margins text-navy"><h2>0</h2></div>
+                        <div class="text-center"><strong>Last visit:</strong> Kate Mary, nurse<br /><small>1 hour ago</small></div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="contact-box">
+                    <a href="@Url.Action("Profile", "AppViews")">
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <h5><strong><span class="m-t-xs"><i class="fa fa-circle text-danger"></i></span> Albert Einstein</strong></h5>
+                                <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a1.jpg">
+                                <div class="text-center"><i class="fa fa-home"></i><small> Room 1</small></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 text-center">
+                            <i class="fa fa-check fa-3x text-navy"></i>
+                            <div class="text-center no-margins"><h4>Events:</h4></div>
+                        </div>
+                        <div class="text-center no-margins text-navy"><h2>0</h2></div>
+                        <div class="text-center"><strong>Last visit:</strong> Kate Mary, nurse<br /><small>1 hour ago</small></div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<div class="row">
+        <div class="col-lg-3">
             <div class="contact-box">
                 <a href="@Url.Action("Profile", "AppViews")">
                     <div class="col-sm-4">
@@ -136,169 +311,31 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="contact-box">
-                <a href="@Url.Action("Profile", "AppViews")">
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a6.jpg">
-                            <div class="m-t-xs font-bold">Graphics designer</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <h3><strong>Janet Carton</strong></h3>
-                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="contact-box">
-                <a href="@Url.Action("Profile", "AppViews")">
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a1.jpg">
-                            <div class="m-t-xs font-bold">CEO</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <h3><strong>Alex Johnatan</strong></h3>
-                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="contact-box">
-                <a href="@Url.Action("Profile", "AppViews")">
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a2.jpg">
-                            <div class="m-t-xs font-bold">Graphics designer</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <h3><strong>John Smith</strong></h3>
-                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="contact-box">
-                <a href="@Url.Action("Profile", "AppViews")">
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a3.jpg">
-                            <div class="m-t-xs font-bold">Marketing manager</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <h3><strong>Monica Smith</strong></h3>
-                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="contact-box">
-                <a href="@Url.Action("Profile", "AppViews")">
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a4.jpg">
-                            <div class="m-t-xs font-bold">Sales manager</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <h3><strong>Michael Zimber</strong></h3>
-                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="contact-box">
-                <a href="@Url.Action("Profile", "AppViews")">
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a5.jpg">
-                            <div class="m-t-xs font-bold">Graphics designer</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <h3><strong>Sandra Smith</strong></h3>
-                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="contact-box">
-                <a href="@Url.Action("Profile", "AppViews")">
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a6.jpg">
-                            <div class="m-t-xs font-bold">Graphics designer</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <h3><strong>Janet Carton</strong></h3>
-                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
-                    </div>
-                    <div class="clearfix"></div>
-                </a>
 
+        <div class="col-lg-3">
+            <div class="contact-box">
+                <a href="@Url.Action("Profile", "AppViews")">
+                    <div class="col-sm-4">
+                        <div class="text-center">
+                            <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a6.jpg">
+                            <div class="m-t-xs font-bold">Graphics designer</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <h3><strong>Janet Carton</strong></h3>
+                        <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
+                        <address>
+                            <strong>Twitter, Inc.</strong><br>
+                            795 Folsom Ave, Suite 600<br>
+                            San Francisco, CA 94107<br>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="contact-box">
                 <a href="@Url.Action("Profile", "AppViews")">
                     <div class="col-sm-4">
@@ -321,7 +358,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <div class="contact-box">
                 <a href="@Url.Action("Profile", "AppViews")">
                     <div class="col-sm-4">
@@ -345,5 +382,144 @@
             </div>
         </div>
     </div>
-</div>
+    <div class="col-lg-3">
+        <div class="contact-box">
+            <a href="@Url.Action("Profile", "AppViews")">
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a3.jpg">
+                        <div class="m-t-xs font-bold">Marketing manager</div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <h3><strong>Monica Smith</strong></h3>
+                    <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+                <div class="clearfix"></div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="contact-box">
+            <a href="@Url.Action("Profile", "AppViews")">
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a4.jpg">
+                        <div class="m-t-xs font-bold">Sales manager</div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <h3><strong>Michael Zimber</strong></h3>
+                    <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+                <div class="clearfix"></div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="contact-box">
+            <a href="@Url.Action("Profile", "AppViews")">
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a5.jpg">
+                        <div class="m-t-xs font-bold">Graphics designer</div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <h3><strong>Sandra Smith</strong></h3>
+                    <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+                <div class="clearfix"></div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="contact-box">
+            <a href="@Url.Action("Profile", "AppViews")">
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a6.jpg">
+                        <div class="m-t-xs font-bold">Graphics designer</div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <h3><strong>Janet Carton</strong></h3>
+                    <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+                <div class="clearfix"></div>
+            </a>
+
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="contact-box">
+            <a href="@Url.Action("Profile", "AppViews")">
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a1.jpg">
+                        <div class="m-t-xs font-bold">CEO</div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <h3><strong>Alex Johnatan</strong></h3>
+                    <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+                <div class="clearfix"></div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="contact-box">
+            <a href="@Url.Action("Profile", "AppViews")">
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <img alt="image" class="img-circle m-t-xs img-responsive" src="~/Images/a2.jpg">
+                        <div class="m-t-xs font-bold">Graphics designer</div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <h3><strong>John Smith</strong></h3>
+                    <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+                <div class="clearfix"></div>
+            </a>
+        </div>
+    </div>*@
+
 
